@@ -12,7 +12,7 @@ import plotly.express as px
 import pandas as pd
 
 
-df = pd.read_csv('c:\Python2\Llaguepe2.csv', delimiter = ';')
+df = pd.read_csv('http://solucionesaustral.cl/Llaguepe2.csv', delimiter = ';')
 fr = pd.DataFrame(df)
  
   
