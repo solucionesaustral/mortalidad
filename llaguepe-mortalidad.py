@@ -17,7 +17,7 @@ fr = pd.DataFrame(df)
  
   
 app=dash.Dash()
-
+server = app.server
 
 fig = px.line(fr, x='fecha', y= "mortalidad", title= "Gráfico de Mortalidad", template = "plotly_dark")
 
