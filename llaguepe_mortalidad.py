@@ -14,7 +14,7 @@ df = pd.read_csv('http://solucionesaustral.cl/Llaguepe2.csv', delimiter = ';')
 fr = pd.DataFrame(df)
  
   
-app=dash.Dash()
+app = Dash(__name__)
 server = app.server
 
 fig = px.line(fr, x='fecha', y= "mortalidad", title= "Gráfico de Mortalidad", template = "plotly_dark")
