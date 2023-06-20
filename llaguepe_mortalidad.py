@@ -5,9 +5,7 @@ Created on Mon May 29 09:09:59 2023
 @author: mauricio
 """
 
-import dash
-import dash_core_components as dcc
-import dash_html_components as html
+from dash import Dash, dcc, html, Input, Output
 import plotly.express as px
 import pandas as pd
 
