@@ -5,9 +5,9 @@ Created on Mon May 29 09:09:59 2023
 @author: mauricio
 """
 
+import pandas as pd
 from dash import Dash, dcc, html
 import plotly.express as px
-import pandas as pd
 
 df = pd.read_csv('http://solucionesaustral.cl/Llaguepe2.csv', delimiter = ';')
   
