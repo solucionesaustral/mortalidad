@@ -9,7 +9,10 @@ import pandas as pd
 from dash import Dash, dcc, html
 import plotly.express as px
 
-df = pd.read_csv('http://solucionesaustral.cl/Llaguepe2.csv', delimiter = ';')
+google_drive_link = "https://drive.google.com/file/d/1uOPzQO_hoHS_Dls52sST5DxGCu2Ko3ac/view?usp=sharing"
+google_drive_link ='https://drive.google.com/uc?id=' + google_drive_link.split('/')[-2]
+df = pd.read_csv(google_drive_link, delimiter = ';')
+
   
 app = Dash(__name__)
 server = app.server
